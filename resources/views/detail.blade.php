@@ -30,9 +30,9 @@
         </div>
 
         <div>{{ $book->detail->body }}</div>
-        
+
         @if ($book->detail->video != 0)
-        <div>Video Section</div>
+        <div class="mt-5 font-bold">Video Section</div>
         <div class="flex justify-center my-3">
             <video  width="w-2/3"  controls>
                 <source src="{{ $book->detail->video }}" type="video/mp4">
